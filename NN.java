@@ -43,7 +43,9 @@ public class NN {
     public int run(double[] input) {
         
         layer1 = input;
-        
+        for(int i = 0; i < layer2.length; i++) {
+            layer2[i] = activate(layer1[0]*weights1to2[0][0] + layer1[1]*weights1to2[0][1] + layer1[2]*weights1to2[0][2]);
+        }
         // layer 2
         
         // layer 3
